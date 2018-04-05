@@ -1,0 +1,25 @@
+# tufte book example
+tufte-style-book/
+
+# directories
+bin/
+obj/
+# binaries
+*.dll
+
+# zip files
+*.zip
+
+# configs
+*.json
+
+# text files
+*.txt
+
+# misc
+*.suo
+*.lock
+*.ide
+*.props
+*.targets
+*.cache
