@@ -8,7 +8,12 @@
 END
 # =====================================================================================
 
-xelatex quantum_computing
+xelatex quantum_computing.tex
+bibtex quantum_computing.aux
+xelatex quantum_computing.tex
+
+rm *.bbl
+rm *.blg
 rm *.aux
 rm *.log
 rm *.lof
