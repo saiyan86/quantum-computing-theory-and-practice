@@ -22,3 +22,8 @@ rm *.toc
 rm *.def
 rm *.out
 rm *.idx
+rm *.ilg
+rm *.ind
+rm *.synctex.gz
+rm *.fdb_latexmk
+rm *.fls
