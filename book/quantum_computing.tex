@@ -21,6 +21,41 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
+  
+\usepackage{xcolor} % for colour
+\setcounter{secnumdepth}{3}
+% chapter format
+\titleformat{\chapter}%
+  {\huge\rmfamily\itshape}% format applied to label+text. If needed, we can add \color{red}
+  {\llap{\colorbox{red}{\parbox{1.5cm}{\hfill\itshape\huge\color{white}\thechapter}}}}% label
+  {2pt}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+% section format
+\titleformat{\section}%
+  {\normalfont\LARGE\itshape}% format applied to label+text
+  {\llap{\colorbox{orange}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+% subsection format
+\titleformat{\subsection}%
+  {\normalfont\Large\itshape}% format applied to label+text
+  {\llap{\colorbox{blue}{\parbox{1.5cm}{\hfill\color{white}\thesubsection}}}}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titleclass{\subsubsection}{straight}
+\titleformat{\subsubsection}%
+  [hang]
+  {\normalfont\Large\itshape}% format applied to label+text
+  {\llap{\colorbox{purple}{\parbox{1.5cm}{\hfill\color{white}\thesubsubsection}}}}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
 
 \makeatletter
 % Paragraph indentation and separation for normal text
@@ -40,7 +75,7 @@
   \setlength{\parskip}{10pt}%
 }
 \makeatother
-  
+
 \usepackage{ifxetex}
 \ifxetex
   \newcommand{\textlspace}[2][5]{%

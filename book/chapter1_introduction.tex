@@ -46,20 +46,26 @@ The Q\# language from Microsoft will be used as the main language for quantum pr
 
 \section{Introduction to quantum mechanics}
 
+\begin{fullwidth}
+
 Before playing around with quantum computing, we need to have some basic background in quantum mechanics.
 But don't worry, let's go through the basics together.
-Since the mathematical foundation of quantum mechaincs is linear algebra, we are gonna learn linear algebra first.
+Since the mathematical foundation of quantum mechanics is linear algebra, we are gonna learn linear algebra first.
 Then we will use the powerful mathematical tool to explain a few important ideas in quantum mechanics.
 Finally, we will apply our newly learned knowledge to write our first quantum program!
 How cool is that!
 So please bear with me for the theoretical part.
 Otherwise, you will not understand how we code the quantum program.
 
+\end{fullwidth}
+
 \subsection{Linear algebra for quantum computing}
 It could easily take a few months for normal people to learn linear algebra.
 Therefore, we will only cover essential parts here.
 There are numerous resources on linear algebra out there, if you want to learn more about it.
 For example, the MIT open course: \href{https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/}{Linear Algebra 18.06} from Prof. Strang\cite{Chapter1-mit-linear-algebra} is extremely good, and you can benefit a lot by completing it.
+
+\subsubsection{\textbf{What} is linear algebra?}
 
 \section{Your first quantum program with Q\#}
 
@@ -79,16 +85,17 @@ They both have their own strength, and only by working together they can get you
 \end{fullwidth}
 
 
-\begin{marginfigure}[16\baselineskip]
+Now let's do the coding.
+This program is taken from Microsoft blog\cite{Chapter1-first-quantum-program}, but that blog assumes the reader has some quantum computing background.
+So instead of redirecting you to the article, let's walk through the program together with our beloved rubber duck methodology\cite{Chapter1-rubber-duck}.
+
+\begin{marginfigure}[\baselineskip]
     \includegraphics[width=\linewidth]{chapter1/rubber-duck-debugging}
     \caption{Rubber duck debugging}
     \label{fig:chapter1-rubber-duck-picture}
 \end{marginfigure}
 
-Now let's do the coding.
-This program is taken from Microsoft blog\cite{Chapter1-first-quantum-program}, but that blog assumes the reader has some quantum computing background.
-So instead of redirecting you to the article, let's walkthrough the program together with our beloved rubber duck methodology\cite{Chapter1-rubber-duck}.
-For those who doesn't know what rubber duck methodology is, I encourage you to spend a minute and search for rubber duck debugging.
+For those who doesn't know what rubber duck methodology is, I encourage you to spend a minute and search for rubber duck debugging\cite{Chapter1-rubber-duck-picture}.
 
 \subsection{Setting up environment}
 To setup a Q\# development environment, you need to install
